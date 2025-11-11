@@ -1,0 +1,18 @@
+def HoojHej(n):
+    lista = list(range(1, n + 1))  
+    
+    for i in range(len(lista)):
+        x = lista[i]
+        
+        if x % 3 == 0 and x % 5 == 0:
+            lista[i] = "Lalalalej"
+        elif x % 3 == 0:
+            lista[i] = "Hooj"
+        elif x % 5 == 0:
+            lista[i] = "Hej"
+    
+    for item in lista:
+        print(item)
+
+n = int(input("Write any number to see the refrain text: "))
+HoojHej(n)
