@@ -14,5 +14,4 @@ stats = {
     "unique_words": len(set(one_line)),
     "most_common": most_often.most_common(1)[0]
 }
-
 print(stats)
