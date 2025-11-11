@@ -1,0 +1,18 @@
+from collections import Counter
+
+text = input("Insert text here: ")
+
+for symbol in ",.!?;:-":
+    text = text.replace(symbol, "")
+
+one_line = text.lower().split()
+
+most_often = Counter(one_line)
+
+stats = {
+    "words_amount": len(one_line),
+    "unique_words": len(set(one_line)),
+    "most_common": most_often.most_common(1)[0]
+}
+
+print(stats)
